@@ -33,13 +33,13 @@ flowchart LR
     Fase3["Fase 3: Nube, Resiliencia y Eventos<br>(OAuth 2.0 RSA, Resilience4j, JMS ActiveMQ, Docker Compose)"]
 ```
 
-### Fase 1: Núcleo de Datos Legacy (Semana 6)
+### Fase 1: Núcleo de Datos Legacy
 El origen del proyecto radicó en procesar y persistir la información financiera histórica provista en el repositorio base [`bank_legacy_data`](https://github.com/KariVillagran/bank_legacy_data). Se modelaron las entidades `Cuenta`, `Transaccion` y `MovimientoAnual`, y se implementó un cargador (`CargadorDatosLegacy`) para inicializar 50 cuentas bancarias, sus movimientos históricos e intereses a partir de archivos planos CSV estructurados (`cuentas_anuales.csv`, `intereses.csv`, `transacciones.csv`).
 
 ### Fase 2: Desacoplamiento mediante Backend for Frontend (BFF)
 Posteriormente, la arquitectura integró capas BFF para canal web y móvil, adaptando las respuestas bancarias según la experiencia del usuario. Estos microservicios BFF residen de forma desacoplada y modular como componentes satélites, manteniendo la independencia del núcleo transaccional.
 
-### Fase 3: Arquitectura Cloud Resiliente, Eventos y Seguridad Federada (Semana 8 - Entrega Actual)
+### Fase 3: Arquitectura Cloud Resiliente, Eventos y Seguridad Federada 
 Para la presente entrega sumativa, el foco estratégico se centró en dotar a la plataforma de robustez Cloud empresarial:
 * Se separó el sistema en microservicios independientes listos para contenedores.
 * Se incorporó el Servidor de Configuración Centralizada (`config-server`) y el Servidor de Descubrimiento (`discovery-server`).
