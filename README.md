@@ -24,7 +24,7 @@ El proyecto consolida la continuidad del desarrollo tecnológico abordando:
 
 ## 2. Contexto Histórico y Evolución del Sistema
 
-* **Fase 1 (Semana 6 — Migración de Datos Legacy):**  
+* **Fase 1 (Migración de Datos Legacy):**  
   El proyecto inició como un sistema de ingesta y procesamiento de datos históricos basados en el repositorio [`bank_legacy_data`](https://github.com/KariVillagran/bank_legacy_data). Se modelaron entidades bancarias y se programó la lectura y persistencia de 50 cuentas bancarias, transacciones históricas e intereses a partir de archivos CSV planos.
 * **Fase 2 (Capas BFF):**  
   Se diseñaron microservicios de agregación Backend for Frontend (BFF) para optimizar la experiencia de canales web y móviles. Dichos BFF se mantienen desacoplados como módulos independientes y no forman parte del núcleo evaluado en la presente entrega.
